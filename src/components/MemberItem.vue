@@ -5,8 +5,8 @@ export default {
   },
   data() {
     return {
-      avatar: `https://avatars.githubusercontent.com/${this.memberItem?.login}`,
-      githubURL: `https://www.github.com/${this.memberItem?.login}`,
+      avatar: `https://avatars.githubusercontent.com/${this.memberItem?.userName}`,
+      githubURL: `https://www.github.com/${this.memberItem?.userName}`,
     };
   },
 };
@@ -19,7 +19,7 @@ export default {
       <h3
         class="text-base font-semibold leading-7 tracking-tight text-gray-900"
       >
-        <a :href="githubURL">{{ memberItem?.login }}</a>
+        <a :href="githubURL">{{ memberItem?.userName }}</a>
       </h3>
     </div>
   </div>

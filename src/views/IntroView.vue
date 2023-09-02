@@ -13,12 +13,12 @@ export default {
   methods: {
     async getMemberList() {
       await fetch(
-        "https://fur233.oss-cn-hangzhou.aliyuncs.com/common/members.json",
+        "/members.json",
       )
         .then((response) => response.json())
         .then(
           (data) => (
-            (this.$data.memberList = data.data),
+            (this.$data.memberList = data.result),
             (this.$data.lastUpdate = data.updateTime)
           ),
         );
