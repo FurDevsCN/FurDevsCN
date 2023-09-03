@@ -1,19 +1,27 @@
-<script setup lang="ts">
-import HomeView from "./views/HomeView.vue";
-import IntroView from "./views/IntroView.vue";
-import AppFooter from "./components/AppFooter.vue";
-import LoadingPage from "./components/LoadingPage.vue";
-import { onMounted, ref } from "vue";
-let show= ref(true);
-onMounted(() => {
-  window.addEventListener(
+<script lang="ts">
+import { defineAsyncComponent } from "vue";
+export default {
+  components: {
+    HomeView: defineAsyncComponent(() => import("../src/views/HomeView.vue")),
+    IntroView: defineAsyncComponent(() => import("../src/views/IntroView.vue")),
+    AppFooter: defineAsyncComponent(() => import("../src/components/AppFooter.vue")),
+    LoadingPage: defineAsyncComponent(() => import("../src/components/LoadingPage.vue"))
+  },
+  data() {
+    return {
+      show: true
+    }
+  },
+  mounted() {
+    window.addEventListener(
       'load',
       () => {
-        show = ref(!show)
+        this.show = false
       },
       { passive: true, once: true }
-  )
-});
+    )
+  },
+}
 </script>
 
 <template>
