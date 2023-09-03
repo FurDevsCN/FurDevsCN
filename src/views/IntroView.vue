@@ -12,9 +12,7 @@ export default {
   },
   methods: {
     async getMemberList() {
-      await fetch(
-        "/members.json",
-      )
+      await fetch("/members.json")
         .then((response) => response.json())
         .then(
           (data) => (
