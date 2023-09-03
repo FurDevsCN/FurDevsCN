@@ -4,33 +4,37 @@ export default {
   components: {
     HomeView: defineAsyncComponent(() => import("../src/views/HomeView.vue")),
     IntroView: defineAsyncComponent(() => import("../src/views/IntroView.vue")),
-    AppFooter: defineAsyncComponent(() => import("../src/components/AppFooter.vue")),
-    LoadingPage: defineAsyncComponent(() => import("../src/components/LoadingPage.vue"))
+    AppFooter: defineAsyncComponent(
+      () => import("../src/components/AppFooter.vue"),
+    ),
+    LoadingPage: defineAsyncComponent(
+      () => import("../src/components/LoadingPage.vue"),
+    ),
   },
   data() {
     return {
-      show: true
-    }
+      show: true,
+    };
   },
   mounted() {
     window.addEventListener(
-      'load',
+      "load",
       () => {
-        this.show = false
+        this.show = false;
       },
-      { passive: true, once: true }
-    )
+      { passive: true, once: true },
+    );
   },
-}
+};
 </script>
 
 <template>
   <div class="select-none">
-    <LoadingPage v-if="show"/>
+    <LoadingPage v-if="show" />
     <div v-else>
-      <HomeView/>
-      <IntroView/>
-      <AppFooter/>
+      <HomeView />
+      <IntroView />
+      <AppFooter />
     </div>
   </div>
 </template>
