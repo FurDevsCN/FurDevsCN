@@ -6,17 +6,12 @@ export default {
   },
   data() {
     return {
-      memberList: ref([])
+      memberList: ref([]),
     };
   },
   methods: {
     async getMemberList() {
-      await fetch("https://api.github.com/orgs/FurDevsCN/members", {
-        headers: {
-          "X-GitHub-Api-Version": "2022-11-28",
-          Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}` || "", //这种方法会将GITHUB_TOKEN暴露在前端，能否有更好的方法读取env?
-        },
-      })
+      await fetch("/members.json")
         .then((response) => response.json())
         .then((data) => (this.$data.memberList = data));
     },
@@ -38,7 +33,9 @@ export default {
         <p class="mt-6 text-lg leading-8 text-gray-600">
           Meet our members in FurDevsCN
         </p>
-        <span class="mt-6 text-md leading-8 text-gray-500">按照字母顺序排序，排名不分先后</span>
+        <span class="mt-6 text-md leading-8 text-gray-500"
+          >按照字母顺序排序，排名不分先后</span
+        >
       </div>
       <ul
         role="list"
