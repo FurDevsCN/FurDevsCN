@@ -7,21 +7,13 @@ export default {
   data() {
     return {
       memberList: ref([]),
-      lastUpdate: ref(Date),
     };
   },
   methods: {
     async getMemberList() {
-      await fetch(
-        "/members.json",
-      )
+      await fetch("/members.json")
         .then((response) => response.json())
-        .then(
-          (data) => (
-            (this.$data.memberList = data.result),
-            (this.$data.lastUpdate = data.updateTime)
-          ),
-        );
+        .then((data) => (this.$data.memberList = data));
     },
   },
   mounted() {
@@ -41,7 +33,9 @@ export default {
         <p class="mt-6 text-lg leading-8 text-gray-600">
           Meet our members in FurDevsCN
         </p>
-        <span class="text-sm"> 上次更新: {{ lastUpdate }}</span>
+        <span class="mt-6 text-md leading-8 text-gray-500"
+          >按照字母顺序排序，排名不分先后</span
+        >
       </div>
       <ul
         role="list"
