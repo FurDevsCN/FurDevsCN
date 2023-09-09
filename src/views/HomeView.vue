@@ -9,7 +9,7 @@
         <p class="my-6 text-lg leading-8 text-gray-600">
           一个有态度的小动物开发团体
         </p>
-        <a href="https://github.com/FurDevsCN" class="mt-6">
+        <a href="https://github.com/FurDevsCN" class="mt-5">
           <svg
             t="1693146049492"
             class="icon hover:fill-gray-700"
