@@ -1,14 +1,16 @@
 <script lang="ts">
+import type { MemberItem } from '../members';
+
 export default {
   props: {
-    memberItem: Object,
+    memberItem: Object as () => MemberItem, 
   }
 };
 </script>
 
 <template>
   <div class="flex items-center gap-x-6">
-    <img class="h-16 w-16 rounded-full" :src="memberItem?.avatar_url" alt="" />
+    <img class="h-16 w-16 rounded-full" :src="memberItem?.avatar_url" alt="" /> 
     <div>
       <h3
         class="text-base font-semibold leading-7 tracking-tight text-gray-900"
