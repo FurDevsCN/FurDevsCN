@@ -1,15 +1,16 @@
 <script lang="ts">
+import HomeView from "./views/HomeView.vue";
+import IntroView from "./views/IntroView.vue";
+import AppFooter from "./components/AppFooter.vue";
 import { defineAsyncComponent } from "vue";
 export default {
   components: {
-    HomeView: defineAsyncComponent(() => import("../src/views/HomeView.vue")),
-    IntroView: defineAsyncComponent(() => import("../src/views/IntroView.vue")),
-    AppFooter: defineAsyncComponent(
-      () => import("../src/components/AppFooter.vue"),
-    ),
     LoadingPage: defineAsyncComponent(
       () => import("../src/components/LoadingPage.vue"),
     ),
+    HomeView,
+    IntroView,
+    AppFooter,
   },
   data() {
     return {
