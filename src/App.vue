@@ -2,6 +2,7 @@
 import HomeView from "./views/HomeView.vue";
 import IntroView from "./views/IntroView.vue";
 import AppFooter from "./components/AppFooter.vue";
+import JoinUs from "./views/JoinUs.vue";
 import { defineAsyncComponent } from "vue";
 export default {
   components: {
@@ -10,6 +11,7 @@ export default {
     ),
     HomeView,
     IntroView,
+    JoinUs,
     AppFooter,
   },
   data() {
@@ -35,6 +37,7 @@ export default {
     <div v-else>
       <HomeView />
       <IntroView />
+      <JoinUs />
       <AppFooter />
     </div>
   </div>
