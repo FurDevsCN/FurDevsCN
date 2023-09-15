@@ -7,6 +7,9 @@
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           加入我们
         </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">
+          Join Us
+        </p>
       </div>
       <span class="text-lg leading-loose text-gray-700"
         >FurDevsCN
