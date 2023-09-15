@@ -14,7 +14,7 @@ export default {
       await fetch("/members.json")
         .then((response) => response.json())
         .then((data) => (this.$data.memberList = data));
-    }
+    },
   },
   mounted() {
     this.getMemberList();

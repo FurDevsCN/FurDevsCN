@@ -15,10 +15,10 @@ export default {
       await fetch(`https://api.github.com/users/${login}`)
         .then((response) => response.json())
         .then((data) => (this.$data.memberInfo = data));
-    }
+    },
   },
   mounted() {
-    this.fetchGithubApi(this.$props.memberItem?.login)
+    this.fetchGithubApi(this.$props.memberItem?.login);
   },
 };
 </script>
@@ -30,8 +30,15 @@ export default {
       <h3
         class="text-base font-semibold leading-7 tracking-tight text-gray-900"
       >
-        <a :href="memberInfo?.html_url">{{ memberInfo?.name }} ({{ memberInfo?.login }})</a>
-        <span>{{ memberInfo?.bio }}</span>
+        <a :href="memberInfo?.html_url" class="mt-6 text-md leading-8"
+          >{{ memberInfo?.name ? memberInfo.name : memberInfo?.login }} ({{
+            memberInfo?.login
+          }})
+        </a>
+        <br />
+        <span class="mt-6 text-sm leading-8 text-gray-500">{{
+          memberInfo?.bio
+        }}</span>
       </h3>
     </div>
   </div>
