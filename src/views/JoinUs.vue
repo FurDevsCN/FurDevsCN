@@ -7,6 +7,7 @@
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           加入我们
         </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Join Us</p>
       </div>
       <span class="text-lg leading-loose text-gray-700"
         >FurDevsCN
@@ -17,9 +18,9 @@
         <a
           href="mailto:colour93@furdevs.cn"
           class="text-gray-500 hover:text-gray-900"
-        > 
-          colour93@furdevs.cn
-        </a>，内容包括您的Github主页、个人简介、个人博客等信息。
+        >
+          colour93@furdevs.cn </a
+        >，内容包括您的Github主页、个人简介、个人博客等信息。
         不用担心，我们不会因为您的水平而拒绝您，只要您对编程有兴趣，我们都欢迎您的加入！
       </span>
     </div>

@@ -1,6 +1,6 @@
 <template>
-  <div class="relative isolate px-6 lg:px-8 h-screen">
-    <div class="mx-6 max-w-2xl py-32 sm:py-40">
+  <div class="relative isolate px-8 h-screen">
+    <div class="mx-12 max-w-2xl py-32 sm:py-40">
       <div>
         <img src="/FurDevsCN.svg" class="h-32 my-6" />
         <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
@@ -31,7 +31,7 @@
       </div>
     </div>
     <a href="#pageIntro">
-      <button class="flex w-full justify-center items-center">
+      <button class="flex w-full justify-center items-center -mt-10">
         <svg
           t="1693257852830"
           class="icon drop-shadow hover:drop-shadow-xl"
