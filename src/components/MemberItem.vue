@@ -3,7 +3,7 @@ import type { MemberItem } from "../member-item";
 
 export default {
   props: {
-    memberItem: Object,
+    memberItem: Object as () => MemberItem | undefined,
   },
   data() {
     return {
@@ -25,19 +25,19 @@ export default {
 
 <template>
   <div class="flex items-center gap-x-6">
-    <img class="h-16 w-16 rounded-full" :src="memberInfo?.avatar_url" alt="" />
+    <img class="h-16 w-16 rounded-full" :src="memberItem?.avatar_url" alt="" />
     <div>
       <h3
         class="text-base font-semibold leading-7 tracking-tight text-gray-900"
       >
-        <a :href="memberInfo?.html_url" class="mt-6 text-md leading-8"
-          >{{ memberInfo?.name ? memberInfo.name : memberInfo?.login }} ({{
-            memberInfo?.login
+        <a :href="memberItem?.html_url" class="mt-6 text-md leading-8"
+          >{{ memberInfo.name ? memberInfo.name : memberItem?.login }}({{
+            memberItem?.login
           }})
         </a>
         <br />
         <span class="mt-6 text-sm leading-8 text-gray-500">{{
-          memberInfo?.bio
+          memberInfo?.bio ? memberInfo.bio : "暂无简介"
         }}</span>
       </h3>
     </div>
