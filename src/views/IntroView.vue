@@ -1,5 +1,7 @@
 <script lang="ts">
 import { defineAsyncComponent, ref } from "vue";
+import { fetchApi } from "../utils/fetchApi";
+
 export default {
   components: {
     Member: defineAsyncComponent(() => import("../components/MemberItem.vue")),
@@ -11,9 +13,7 @@ export default {
   },
   methods: {
     async getMemberList() {
-      await fetch("/members.json")
-        .then((response) => response.json())
-        .then((data) => (this.$data.memberList = data));
+      this.$data.memberList = await fetchApi("/members.json")
     },
   },
   mounted() {

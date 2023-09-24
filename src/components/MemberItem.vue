@@ -1,5 +1,6 @@
 <script lang="ts">
 import type { MemberItem } from "../member-item";
+import { fetchApi } from "../utils/fetchApi";
 
 export default {
   props: {
@@ -12,9 +13,7 @@ export default {
   },
   methods: {
     async fetchGithubApi(login: string | undefined) {
-      await fetch(`https://api.github.com/users/${login}`)
-        .then((response) => response.json())
-        .then((data) => (this.$data.memberInfo = data));
+      this.$data.memberInfo =  await fetchApi(`https://api.github.com/users/${login}`)
     },
   },
   mounted() {
