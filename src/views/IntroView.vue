@@ -13,7 +13,9 @@ export default {
   },
   methods: {
     async getMemberList() {
-      this.$data.memberList = await fetchApi("/members.json")
+      this.$data.memberList = await fetchApi(
+        "https://api.github.com/orgs/FurDevsCN/members",
+      );
     },
   },
   mounted() {

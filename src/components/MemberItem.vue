@@ -13,7 +13,9 @@ export default {
   },
   methods: {
     async fetchGithubApi(login: string | undefined) {
-      this.$data.memberInfo =  await fetchApi(`https://api.github.com/users/${login}`)
+      this.$data.memberInfo = await fetchApi(
+        `https://api.github.com/users/${login}`,
+      );
     },
   },
   mounted() {
