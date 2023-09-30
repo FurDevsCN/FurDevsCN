@@ -1,6 +1,15 @@
+<script lang="ts">
+import announcementBar from "../ui/announcementBar.vue";
+export default {
+  components: {
+    announcementBar,
+  },
+};
+</script>
 <template>
-  <div class="relative isolate px-8 h-screen backdrop-blur-sm bg-white/30">
-    <div class="mx-12 max-w-2xl py-32 sm:py-40">
+  <div class="relative isolate px-8 h-screen">
+    <announcementBar />
+    <div class="mx-12 max-w-2xl my-36">
       <img src="/FurDevsCN.svg" class="h-32 my-6" />
       <div>
         <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
@@ -32,7 +41,7 @@
     </div>
     <a href="#pageIntro">
       <button
-        class="flex w-full justify-center items-center -mt-10 duration-300 translate-y-0 ease-in-out hover:-translate-y-6 ease-in-out"
+        class="flex w-full justify-center items-center -mt-10 max-lg:-mt-24 duration-300 translate-y-0 ease-in-out hover:-translate-y-6 ease-in-out"
       >
         <svg
           t="1693257852830"
