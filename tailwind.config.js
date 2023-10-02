@@ -5,13 +5,13 @@ export default {
     extend: {
       keyframes: {
         notify: {
-          'from': { marginTop: '-100px' },
-          'to': { marginTop: '20px' },
-        }
+          from: { marginTop: "-100px" },
+          to: { marginTop: "20px" },
+        },
       },
       animationIterationCount: {
-				1: "1",
-			},
+        1: "1",
+      },
     },
   },
   plugins: [],

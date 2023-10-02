@@ -7,13 +7,13 @@ export default {
 };
 </script>
 <template>
-  <div class="relative isolate px-8 h-screen">
-    <announcementBar>
+  <announcementBar>
       <a class="text-white">🎉我们正在招新！</a
       ><a href="#pageIntro" class="text-white nounderline hover:underline">
         <b>点击这里查看详情 →</b>
       </a>
-    </announcementBar>
+  </announcementBar>
+  <div class="relative isolate px-8 h-screen">
     <div class="mx-12 max-w-2xl my-36">
       <img src="/FurDevsCN.svg" class="h-32 my-6" />
       <div>
