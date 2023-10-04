@@ -1,7 +1,7 @@
 <script lang="ts">
 import HomeView from "./views/HomeView.vue";
 import IntroView from "./views/IntroView.vue";
-import AppFooter from "./components/AppFooter.vue";
+import AppFooter from "./ui/AppFooter.vue";
 import JoinUs from "./views/JoinUs.vue";
 import { defineAsyncComponent } from "vue";
 export default {

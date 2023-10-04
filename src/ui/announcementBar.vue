@@ -1,8 +1,7 @@
 <template>
   <div
-    class="flex items-center justify-center h-14 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full mt-5 max-sm:hidden"
+    class="flex absolute top-0 left-10 right-10 shadow-lg animate-[notify_1s_ease-in-out_1] h-14 items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full mt-5 max-sm:hidden"
   >
-    <a class="text-white">🎉我们正在招新！</a
-    ><a href="#pageIntro" class="text-white"><b>点击这里查看详情 →</b></a>
+    <slot></slot>
   </div>
 </template>

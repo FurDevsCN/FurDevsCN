@@ -2,7 +2,17 @@
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        notify: {
+          from: { marginTop: "-100px" },
+          to: { marginTop: "20px" },
+        },
+      },
+      animationIterationCount: {
+        1: "1",
+      },
+    },
   },
   plugins: [],
 };
