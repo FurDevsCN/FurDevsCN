@@ -28,7 +28,7 @@ export default {
     <div class="mx-12 max-w-2xl my-44">
       <img src="/FurDevsCN.svg" class="h-32 my-6" />
       <div>
-        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+        <h1 class="font-HooskaiChamferedSquare text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
           FurDevsCN
         </h1>
         <p class="my-6 text-lg leading-8 text-gray-600">
@@ -43,7 +43,10 @@ export default {
       <button
         class="flex w-full justify-center items-center -mt-10 max-lg:-mt-24 duration-300 translate-y-0 ease-in-out hover:-translate-y-6 ease-in-out"
       >
-        <img src="/DownArrow.svg" class="duration-0 icon drop-shadow hover:drop-shadow-xl duration-200" />
+        <img
+          src="/DownArrow.svg"
+          class="duration-0 icon drop-shadow hover:drop-shadow-xl duration-200"
+        />
       </button>
     </a>
   </div>
