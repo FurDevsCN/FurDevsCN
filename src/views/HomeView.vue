@@ -31,7 +31,7 @@ export default {
         <h1
           class="font-HooskaiChamferedSquare text-4xl font-bold tracking-tight text-gray-800 sm:text-6xl"
         >
-          Fur<br>Devs<br>CN
+          Fur<br />Devs<br />CN
         </h1>
         <p class="my-6 text-lg leading-8 text-gray-600">
           一个有态度的小动物开发团体
