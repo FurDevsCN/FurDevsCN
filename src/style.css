@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'HooskaiChamferedSquare';
-    src: url('./assets/HooskaiChamferedSquare.ttf');
+  font-family: "HooskaiChamferedSquare";
+  src: url("./assets/HooskaiChamferedSquare.ttf");
 }

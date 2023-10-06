@@ -14,8 +14,8 @@ export default {
       },
     },
     fontFamily: {
-      'HooskaiChamferedSquare': ['HooskaiChamferedSquare', 'sans-serif'],
-    }
+      HooskaiChamferedSquare: ["HooskaiChamferedSquare", "sans-serif"],
+    },
   },
   plugins: [],
 };
