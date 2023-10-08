@@ -1,9 +1,12 @@
 <script lang="ts">
+import { defineAsyncComponent } from "vue";
+
 import HomeView from "./views/HomeView.vue";
 import IntroView from "./views/IntroView.vue";
 import AppFooter from "./ui/AppFooter.vue";
 import JoinUs from "./views/JoinUs.vue";
-import { defineAsyncComponent } from "vue";
+// import { getLocalStorage, setLocalStorage } from "./utils/LocalStorage";
+
 export default {
   components: {
     LoadingPage: defineAsyncComponent(

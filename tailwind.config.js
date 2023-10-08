@@ -13,6 +13,9 @@ export default {
         1: "1",
       },
     },
+    fontFamily: {
+      HooskaiChamferedSquare: ["HooskaiChamferedSquare", "sans-serif"],
+    },
   },
   plugins: [],
 };
