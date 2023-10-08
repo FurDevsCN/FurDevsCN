@@ -1,12 +1,14 @@
-export function setLocalStorage<T>(key: string, value: any): T | string | void{
-    const cache = localStorage.getItem(key)
-    return cache ? cache : localStorage.setItem(key, value)
+export function setLocalStorage(key: string, items: string): void {
+  const cache = localStorage.getItem(key);
+  if (!cache) {
+    return localStorage.setItem(key, items);
+  }
 }
 
-export default function getLocalStorage(key: string): string | null{
-    return localStorage.getItem(key)
+export function getLocalStorage(key: string): any | null {
+  return localStorage.getItem(key);
 }
 
-export function clearLocalStorage(key: string | null): void{
-    return key? localStorage.removeItem(key) : localStorage.clear()
+export function clearLocalStorage(key: string | null): void {
+  return key ? localStorage.removeItem(key) : localStorage.clear();
 }

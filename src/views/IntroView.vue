@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     async getMemberList() {
-      this.$data.memberList = await fetchApi(
+      this.memberList = await fetchApi(
         "https://api.github.com/orgs/FurDevsCN/members",
       );
     },

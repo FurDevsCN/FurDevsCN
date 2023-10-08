@@ -25,7 +25,7 @@ export default {
     </a>
   </announcementBar>
   <div class="relative isolate px-1.5 h-screen">
-    <div class="mx-10 max-w-2xl my-40 max-lg:my-28">
+    <div class="mx-20 max-w-2xl my-40 max-lg:my-28">
       <img src="/FurDevsCN.svg" class="h-32 my-1.5" />
       <div>
         <h1

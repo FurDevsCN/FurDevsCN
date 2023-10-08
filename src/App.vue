@@ -5,7 +5,7 @@ import HomeView from "./views/HomeView.vue";
 import IntroView from "./views/IntroView.vue";
 import AppFooter from "./ui/AppFooter.vue";
 import JoinUs from "./views/JoinUs.vue";
-// import getLocalStoarage from './utils/LocalStorage'
+// import { getLocalStorage, setLocalStorage } from "./utils/LocalStorage";
 
 export default {
   components: {
