@@ -5,6 +5,7 @@ import HomeView from "./views/HomeView.vue";
 import IntroView from "./views/IntroView.vue";
 import AppFooter from "./ui/AppFooter.vue";
 import JoinUs from "./views/JoinUs.vue";
+import ScrollToTop from "./components/ScrollToTop.vue";
 // import { getLocalStorage, setLocalStorage } from "./utils/LocalStorage";
 
 export default {
@@ -13,6 +14,7 @@ export default {
       () => import("../src/components/LoadingPage.vue"),
     ),
     HomeView,
+    ScrollToTop,
     IntroView,
     JoinUs,
     AppFooter,
@@ -39,6 +41,7 @@ export default {
     <LoadingPage v-if="show" />
     <div v-else>
       <HomeView />
+      <ScrollToTop/>
       <JoinUs />
       <IntroView />
       <AppFooter />
