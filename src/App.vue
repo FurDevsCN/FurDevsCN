@@ -41,7 +41,7 @@ export default {
     <LoadingPage v-if="show" />
     <div v-else>
       <HomeView />
-      <ScrollToTop/>
+      <ScrollToTop />
       <JoinUs />
       <IntroView />
       <AppFooter />
