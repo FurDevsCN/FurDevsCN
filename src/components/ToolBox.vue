@@ -1,14 +1,14 @@
 <template>
-    <transition name="slide" mode="out-in">
-        <div class="flex flex-col" v-show="showToolBox">
-            <ScrollToTop />
-            <DarkModeButton />
-        </div>
-    </transition>
+  <transition name="slide" mode="out-in">
+    <div class="flex flex-col" v-show="showToolBox">
+      <ScrollToTop />
+      <DarkModeButton />
+    </div>
+  </transition>
 </template>
 <script lang="ts">
-import ScrollToTop from '../ui/ScrollToTop.vue';
-import DarkModeButton from '../ui/DarkModeButton.vue';
+import ScrollToTop from "../ui/ScrollToTop.vue";
+import DarkModeButton from "../ui/DarkModeButton.vue";
 export default {
   components: {
     ScrollToTop,
