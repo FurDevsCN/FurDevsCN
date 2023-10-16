@@ -22,6 +22,9 @@ export default {
     toggleDarkMode() {
       this.darkMode = !this.darkMode;
       setLocalStorage("darkMode", this.darkMode.toString());
+      this.darkMode
+        ? document.body.classList.add("dark")
+        : document.body.classList.remove("dark");
     },
   },
 };

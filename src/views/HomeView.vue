@@ -1,5 +1,5 @@
 <script lang="ts">
-import announcementBar from "../ui/announcementBar.vue";
+import announcementBar from "@/ui/announcementBar.vue";
 export default {
   components: {
     announcementBar,
@@ -43,11 +43,11 @@ export default {
     </div>
     <a href="javascript:void(0)" @click="scrollIntoView()">
       <button
-        class="flex w-full justify-center items-center -mt-32 max-lg:-mt-16 duration-300 translate-y-0 ease-in-out hover:-translate-y-6 ease-in-out"
+        class="flex w-full justify-center items-center -mt-32 max-lg:-mt-16 duration-300 translate-y-0 hover:-translate-y-6 ease-in-out"
       >
         <img
           src="/DownArrow.svg"
-          class="duration-0 icon drop-shadow hover:drop-shadow-xl duration-200"
+          class="icon drop-shadow hover:drop-shadow-xl duration-200"
         />
       </button>
     </a>

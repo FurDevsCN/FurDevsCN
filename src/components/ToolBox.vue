@@ -1,10 +1,8 @@
 <template>
-  <transition name="slide" mode="out-in">
-    <div class="flex flex-col" v-show="showToolBox">
-      <ScrollToTop />
-      <DarkModeButton />
-    </div>
-  </transition>
+  <div class="flex flex-col overflow-x-hidden" v-show="showToolBox">
+    <ScrollToTop />
+    <DarkModeButton />
+  </div>
 </template>
 <script lang="ts">
 import ScrollToTop from "../ui/ScrollToTop.vue";
@@ -36,17 +34,3 @@ export default {
   },
 };
 </script>
-<style>
-.slide-enter-active,
-.slide-leave-active {
-  transition: transform 0.5s;
-}
-
-.slide-leave-to /* .slide-leave-active 在 <2.1.8 中是 */ {
-  transform: translateX(300%);
-}
-
-.slide-enter-to {
-  transform: translateX(-0.25rem);
-}
-</style>
