@@ -15,17 +15,18 @@ import { getLocalStorage, setLocalStorage } from "../utils/LocalStorage";
 export default {
   data() {
     return {
-      darkMode: ref(getLocalStorage("darkMode") === "true"),
+      darkMode: ref(getLocalStorage("darkMode") === "true")
     };
   },
   methods: {
     toggleDarkMode() {
       this.darkMode = !this.darkMode;
-      setLocalStorage("darkMode", this.darkMode.toString());
-      this.darkMode
-        ? document.body.classList.add("dark")
-        : document.body.classList.remove("dark");
+      setLocalStorage("darkMode", this.darkMode);
+      document.documentElement.classList.toggle("dark", this.darkMode);
     },
+  },
+  mounted() {
+    document.documentElement.classList.toggle("dark", this.darkMode);
   },
 };
 </script>

@@ -1,15 +1,15 @@
 <template>
-  <div class="h-full w-full bg-white py-24 sm:py-32" id="pageIntro">
+  <div class="h-full w-full bg-white py-24 dark:bg-slate-800 sm:py-32" id="pageIntro">
     <div
       class="mx-auto grid max-w-7xl gap-x-12 gap-y-20 px-6 lg:px-8 xl:grid-cols-2"
     >
       <div class="max-w-2xl">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
           加入我们
         </h2>
-        <p class="mt-6 text-lg leading-8 text-gray-600">Join Us</p>
+        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-200">Join Us</p>
       </div>
-      <span class="text-lg leading-loose text-gray-700"
+      <span class="text-lg leading-loose text-gray-700 dark:text-gray-200"
         >FurDevsCN
         是一个由志同道合的小动物爱好者组成的开发社区，我们致力于在编程中探索无尽的可能性。
         我们的成员涵盖了各种编程语言和技术领域，无论您是初学者还是经验丰富的开发者，都能在这里找到属于自己的位置
