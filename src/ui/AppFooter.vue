@@ -11,10 +11,17 @@
       <div class="text-center mb-4">
         <ul class="flex justify-center space-x-3">
           <li v-for="(item, index) in footerItems" :key="item.name">
-            <a :href="item.link" class="text-gray-500 hover:text-gray-900 dark:text-gray-100 hover:dark:text-gray-300">{{
-              item.name
-            }}</a>
-            <span v-if="index < footerItems.length - 1" class="ml-3 dark:text-gray-100"> · </span>
+            <a
+              :href="item.link"
+              class="text-gray-500 hover:text-gray-900 dark:text-gray-100 hover:dark:text-gray-300"
+              >{{ item.name }}</a
+            >
+            <span
+              v-if="index < footerItems.length - 1"
+              class="ml-3 dark:text-gray-100"
+            >
+              ·
+            </span>
           </li>
         </ul>
       </div>

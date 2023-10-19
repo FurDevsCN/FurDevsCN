@@ -15,7 +15,7 @@ import { getLocalStorage, setLocalStorage } from "../utils/LocalStorage";
 export default {
   data() {
     return {
-      darkMode: ref(getLocalStorage("darkMode") === "true")
+      darkMode: ref(getLocalStorage("darkMode") === "true"),
     };
   },
   methods: {

@@ -26,8 +26,8 @@ export default {
       </a>
     </announcementBar>
     <div class="flex h-screen">
-      <div class="mx-20 max-w-2xl">
-        <img src="/FurDevsCN.svg" class="h-32 mt-36" />
+      <div class="w-screen mx-20 max-w-2xl">
+        <img src="/FurDevsCN.svg" class="h-32 mt-36 max-xl:mt-24" />
         <div>
           <h1
             class="font-HooskaiChamferedSquare text-4xl font-bold tracking-tight text-gray-800 sm:text-6xl dark:text-gray-50"
@@ -41,17 +41,17 @@ export default {
         <a href="https://github.com/FurDevsCN" class="mt-5">
           <img src="/Github.svg" class="h-8" />
         </a>
+        <a href="javascript:void(0)" @click="scrollIntoView()">
+          <button
+            class="mt-16 float-right max-xl:float-none max-xl:mt-8 duration-300 translate-y-0 hover:-translate-y-6 ease-in-out"
+          >
+            <img
+              src="/DownArrow.svg"
+              class="icon drop-shadow hover:drop-shadow-xl duration-200"
+            />
+          </button>
+        </a>
       </div>
-      <a href="javascript:void(0)" @click="scrollIntoView()">
-        <button
-          class="flex w-full justify-center items-center -mt-32 max-lg:-mt-16 duration-300 translate-y-0 hover:-translate-y-6 ease-in-out"
-        >
-          <img
-            src="/DownArrow.svg"
-            class="icon drop-shadow hover:drop-shadow-xl duration-200"
-          />
-        </button>
-      </a>
     </div>
   </div>
 </template>
