@@ -1,8 +1,5 @@
-export function setLocalStorage(key: string, items: string): void {
-  const cache = localStorage.getItem(key);
-  if (!cache) {
-    return localStorage.setItem(key, items);
-  }
+export function setLocalStorage(key: string, items: string | any): void {
+  return localStorage.setItem(key, items as string);
 }
 
 export function getLocalStorage(key: string): any | null {

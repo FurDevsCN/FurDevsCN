@@ -4,8 +4,9 @@ import { defineAsyncComponent } from "vue";
 import HomeView from "./views/HomeView.vue";
 import IntroView from "./views/IntroView.vue";
 import AppFooter from "./ui/AppFooter.vue";
+import ToolBox from "./components/ToolBox.vue";
 import JoinUs from "./views/JoinUs.vue";
-import ScrollToTop from "./components/ScrollToTop.vue";
+
 // import { getLocalStorage, setLocalStorage } from "./utils/LocalStorage";
 
 export default {
@@ -14,7 +15,7 @@ export default {
       () => import("../src/components/LoadingPage.vue"),
     ),
     HomeView,
-    ScrollToTop,
+    ToolBox,
     IntroView,
     JoinUs,
     AppFooter,
@@ -41,7 +42,7 @@ export default {
     <LoadingPage v-if="show" />
     <div v-else>
       <HomeView />
-      <ScrollToTop />
+      <ToolBox />
       <JoinUs />
       <IntroView />
       <AppFooter />

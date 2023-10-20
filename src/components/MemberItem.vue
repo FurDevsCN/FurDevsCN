@@ -32,7 +32,7 @@ export default {
     <img class="h-16 w-16 rounded-full" :src="memberItem?.avatar_url" alt="" />
     <div>
       <h3
-        class="text-base font-semibold leading-7 tracking-tight text-gray-900"
+        class="text-base font-semibold leading-7 tracking-tight text-gray-900 dark:text-indigo-100"
       >
         <a :href="memberItem?.html_url" class="mt-6 text-md leading-8"
           >{{ memberInfo.name ? memberInfo.name : memberItem?.login }}({{
