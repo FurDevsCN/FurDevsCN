@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col overflow-x-hidden" v-show="showToolBox">
-    <ScrollToTop />
+  <div class="flex flex-col overflow-x-hidden">
+    <ScrollToTop v-show="showScroll"/>
     <DarkModeButton />
   </div>
 </template>
@@ -14,15 +14,15 @@ export default {
   },
   data() {
     return {
-      showToolBox: false,
+      showScroll: false,
     };
   },
   methods: {
     handleScroll() {
       if (window.scrollY > 100) {
-        this.showToolBox = true;
+        this.showScroll = true;
       } else {
-        this.showToolBox = false;
+        this.showScroll = false;
       }
     },
   },
