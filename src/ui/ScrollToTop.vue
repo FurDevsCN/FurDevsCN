@@ -24,7 +24,4 @@ export default {
 .slide-leave-active {
   transition: transform 0.5s;
 }
-.slide-leave-to /* .slide-leave-active 在 <2.1.8 中是 */ {
-  transform: translateX(300%);
-}
 </style>

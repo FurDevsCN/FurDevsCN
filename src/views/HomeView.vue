@@ -29,7 +29,7 @@ export default {
       <img src="/FurDevsCN.svg" class="h-32 mt-36 max-xl:mt-24" />
       <div>
         <h1
-          class="font-HooskaiChamferedSquare text-4xl font-bold tracking-tight text-gray-800 sm:text-6xl dark:text-gray-50"
+          class="font-HooskaiChamferedSquare text-4xl font-bold tracking-tight text-gray-800 sm:text-6xl dark:text-gray-100"
         >
           Fur<br />Devs<br />CN
         </h1>
@@ -38,7 +38,7 @@ export default {
         </p>
       </div>
       <a href="https://github.com/FurDevsCN" class="mt-5">
-        <img src="/Github.svg" class="h-8" />
+        <img src="/Github.svg" class="h-8 dark:filter dark:invert" />
       </a>
     </div>
     <button
@@ -47,7 +47,7 @@ export default {
     >
       <img
         src="/DownArrow.svg"
-        class="icon drop-shadow hover:drop-shadow-xl duration-200"
+        class="icon drop-shadow hover:drop-shadow-xl duration-200 dark:filter dark:invert"
       />
     </button>
   </div>
