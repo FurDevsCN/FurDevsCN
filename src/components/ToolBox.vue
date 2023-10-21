@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col overflow-x-hidden">
-    <ScrollToTop v-show="showScroll"/>
+    <ScrollToTop v-show="showScroll" />
     <DarkModeButton />
   </div>
 </template>
