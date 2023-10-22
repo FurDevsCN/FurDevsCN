@@ -15,7 +15,7 @@ export default {
 </script>
 <template>
   <div
-    class="dark:bg-slate-800 flex flex-col h-screen justify-between overflow-hidden"
+    class="max-xl:dark:bg-slate-800 flex flex-col h-screen justify-between overflow-hidden"
   >
     <div class="relative h-screen">
       <div
@@ -47,7 +47,10 @@ export default {
           </div>
         </div>
       </div>
-      <div class="absolute inset-0 -z-50 max-xl:hidden">
+      <div class="fixed inset-0 -z-50 max-xl:hidden">
+        <div
+          class="dark:w-full dark:h-full dark:absolute dark:inset-0 dark:bg-black dark:opacity-30"
+        ></div>
         <video class="object-cover w-full h-full" autoplay muted loop>
           <source src="/wave.mp4" type="video/mp4" />
         </video>

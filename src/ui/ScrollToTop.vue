@@ -24,4 +24,7 @@ export default {
 .slide-leave-active {
   transition: transform 0.5s;
 }
+.slide-leave-to {
+  transform: translateX(300%);
+}
 </style>
