@@ -38,7 +38,7 @@ export default {
           Meet our members in FurDevsCN
         </p>
         <span class="mt-6 text-md leading-8 text-gray-500"
-          >按照字母顺序排序，排名不分先后</span
+          ><b>按照字母顺序排序，排名不分先后</b></span
         >
       </div>
       <ul
