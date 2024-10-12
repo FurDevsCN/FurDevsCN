@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-white -mt-10 dark:bg-slate-800 overflow-hidden">
+  <footer class="bg-white -mt-10 dark:bg-slate-800">
     <div class="container mx-auto">
       <div class="text-center md:text-left">
         <a href="/"
@@ -26,6 +26,7 @@
         </ul>
       </div>
     </div>
+    <div class="container mx-auto overflow-hidden"></div>
   </footer>
 </template>
 <script lang="ts">
