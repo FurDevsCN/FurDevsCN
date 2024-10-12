@@ -15,20 +15,20 @@ export default {
 </script>
 <template>
   <div
-    class="max-xl:dark:bg-slate-800 flex flex-col h-screen justify-between overflow-hidden"
+    class="flex flex-col h-screen justify-between overflow-hidden"
   >
     <div class="relative h-screen">
       <div
         class="w-screen max-w-2xl absolute inset-0 filter backdrop-blur-md rounded-xl"
       >
         <div class="mx-20 flex-col">
-          <img src="/FurDevsCN.svg" class="h-32 mt-36 max-xl:mt-24" />
+          <img src="/FurDevsCN.svg" class="h-32 mt-36 max-xl:mt-24 invert" />
           <h1
-            class="font-HooskaiChamferedSquare text-4xl font-bold tracking-tight text-gray-800 sm:text-6xl dark:text-gray-100 mt-6"
+            class="font-HooskaiChamferedSquare text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl dark:text-gray-100 mt-6"
           >
             Fur<br />Devs<br />CN
           </h1>
-          <p class="my-6 text-lg leading-8 text-gray-600 dark:text-slate-300">
+          <p class="my-6 text-lg leading-8 text-gray-100 dark:text-slate-100">
             一个有态度的小动物开发团体
           </p>
           <div class="md:flex md:items-center mt-6">
@@ -41,13 +41,13 @@ export default {
             <a href="https://github.com/FurDevsCN" class="ml-5">
               <img
                 src="/Github.svg"
-                class="h-8 max-sm:mt-4 dark:filter dark:invert"
+                class="h-8 max-sm:mt-4 invert dark:filter dark:invert"
               />
             </a>
           </div>
         </div>
       </div>
-      <div class="fixed inset-0 -z-50 max-xl:hidden">
+      <div class="fixed inset-0 -z-50">
         <div
           class="dark:w-full dark:h-full dark:absolute dark:inset-0 dark:bg-black dark:opacity-30"
         ></div>
