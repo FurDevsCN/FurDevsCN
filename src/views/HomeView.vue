@@ -68,3 +68,8 @@ export default {
     </announcementBar>
   </div>
 </template>
+<style scoped>
+video {
+  background: url("/wave.webp") no-repeat center;
+}
+</style>
